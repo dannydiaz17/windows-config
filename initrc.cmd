@@ -3,7 +3,7 @@
 :: Commands
 
 DOSKEY ls=dir /B
-DOSKEY alias=notepad %USERPROFILE%\alias.cmd
+DOSKEY alias=notepad %USERPROFILE%\initrc.cmd
 DOSKEY gp=gopass show -c $*
 DOSKEY here=explorer.exe .
 DOSKEY v=vim $*
@@ -23,4 +23,10 @@ DOSKEY p=cd "%USERPROFILE%\Pictures\$*"
 
 :: Folder Script
 
-::isDir
+:isDir
+%@Try%
+cd %1
+%@EndTry%
+goto :eof
+
+
