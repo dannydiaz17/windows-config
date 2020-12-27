@@ -4,8 +4,9 @@
 
 DOSKEY ls=dir /B
 DOSKEY alias=notepad %USERPROFILE%\alias.cmd
+DOSKEY gp=gopass show -c $*
 DOSKEY here=explorer.exe .
-DOSKEY v=cd "vim $*"
+DOSKEY v=vim $*
 
 :: Common directories
 
@@ -16,6 +17,7 @@ DOSKEY copp=cd "%USERPROFILE%\Documents\coding\python\pivot-points\$*"
 DOSKEY copz=cd "%USERPROFILE%\Documents\coding\python\zipline\$*"
 DOSKEY d=cd "%USERPROFILE%\Downloads\$*"
 DOSKEY dc=cd "%USERPROFILE%\Documents\$*"
+DOSKEY gp=gopass show -c $*
 DOSKEY h=cd "%USERPROFILE%\ $*"
 DOSKEY p=cd "%USERPROFILE%\Pictures\$*"
 
